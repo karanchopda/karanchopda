@@ -1,38 +1,77 @@
+/* App.css
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove any default margins/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main app container */
 .App {
-  text-align: center;
+  background-color: #000;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Single scroll container */
+.single-scroll-container {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Each section takes full viewport height */
+.section {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
+/* Remove the navbar from individual components since we have it fixed */
+.section > div > nav {
+  display: none !important;
+}
+
+/* Ensure sections flow properly */
+.section > div {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Fix any padding issues with sections */
+.section > div > div:first-child {
+  padding-top: 80px; /* Account for fixed navbar */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Make sure backgrounds extend full width */
+.section > div {
+  width: 100%;
 }
+
+/* Smooth transitions for section changes */
+.section {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Custom scrollbar for better appearance */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #606060;
+} 
