@@ -17,27 +17,26 @@ const Navbar = ({ activeSection, scrollToSection }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Navbar items
+  // Navbar items - Complete navigation
   const navItems = [
     { name: 'HOME', id: 'home' },
     { name: 'ABOUT', id: 'about' },
     { name: 'SKILLS', id: 'skills' },
-    // { name: 'EXPERIENCE', id: 'experience' },
-    { name: 'CONTACT', id: 'contact' },
-    { name: 'RESUME', id: 'resume', isResume: true,  } // ✅ Added flag for resume
+    { name: 'PROJECTS', id: 'projects' },
+    { name: 'CONTACT', id: 'contact' }, // ✅ Contact section included
+    { name: 'RESUME', id: 'resume', isResume: true }
   ];
 
   // Handle navbar item click
- const handleNavClick = (item) => {
-  if (item.isResume) {
-    // ✅ Open resume directly from public folder
-    window.open(process.env.PUBLIC_URL + '/KaranChopdaResume (3).pdf', '_blank', 'noopener,noreferrer');
-  } else {
-    scrollToSection(item.id);
-  }
-  setIsMobileMenuOpen(false); // Close mobile menu after clicking
-};
-
+  const handleNavClick = (item) => {
+    if (item.isResume) {
+      // ✅ Open resume directly from public folder
+      window.open(process.env.PUBLIC_URL + '/KaranChopdaResume (3).pdf', '_blank', 'noopener,noreferrer');
+    } else {
+      scrollToSection(item.id);
+    }
+    setIsMobileMenuOpen(false); // Close mobile menu after clicking
+  };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
