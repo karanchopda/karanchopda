@@ -11,14 +11,12 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-black relative overflow-hidden">
-      {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-gray-800/10 to-gray-700/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r from-gray-600/10 to-gray-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-gradient-to-r from-gray-700/10 to-gray-600/10 rounded-full blur-3xl animate-pulse delay-2000"></div>
       </div>
 
-      {/* Grid Pattern Background */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-900/5 to-transparent">
         <div
           className="absolute inset-0"
@@ -29,13 +27,10 @@ export default function About() {
         ></div>
       </div>
 
-      {/* Navigation */}
       <Navbar />
 
-      {/* Main Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-8 py-16">
         <div className="grid lg:grid-cols-2 gap-16 items-center min-h-[80vh]">
-          {/* Profile Image Section */}
           <div
             className={`transition-all duration-1000 delay-300 ${
               isLoaded
@@ -44,7 +39,6 @@ export default function About() {
             }`}
           >
             <div className="relative">
-              {/* Profile Image Container */}
               <div className="relative w-full max-w-md mx-auto">
                 <div className="aspect-[4/5] bg-gradient-to-br from-gray-800 to-gray-700 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
                   {/* Replace this div with your actual image */}
@@ -55,7 +49,6 @@ export default function About() {
                     </div>
                   </div> */}
 
-                  {/* Alternative: Uncomment and add your photo */}
 
                   <img
                     src="/images/profile.png"
@@ -64,20 +57,17 @@ export default function About() {
                   />
                 </div>
 
-                {/* Decorative Elements */}
                 <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-gray-600/20 to-gray-500/20 rounded-full blur-xl"></div>
                 <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-r from-gray-700/20 to-gray-600/20 rounded-full blur-xl"></div>
               </div>
             </div>
           </div>
 
-          {/* Content Section */}
           <div
             className={`transition-all duration-1000 delay-500 ${
               isLoaded ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"
             }`}
           >
-            {/* Greeting */}
             <div className="mb-8">
               <h2 className="text-3xl md:text-4xl font-light text-white mb-2 flex items-center">
                 Namaste
@@ -85,13 +75,11 @@ export default function About() {
               </h2>
             </div>
 
-            {/* Name and Title */}
             <div className="mb-8">
               <h1 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight leading-tight">
                 MySelf Karan Chopda
               </h1>
 
-              {/* Info Cards */}
               <div className="space-y-4">
                 <div className="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
                   <MapPin className="w-5 h-5 mr-3 text-gray-400" />
@@ -110,7 +98,6 @@ export default function About() {
               </div>
             </div>
 
-            {/* Description */}
             <div className="text-gray-400 text-lg leading-relaxed space-y-4 max-w-3xl mx-auto px-4">
               <p>
                 I am a{" "}
@@ -124,7 +111,6 @@ export default function About() {
                 . With expertise in
                 <span className="text-gray-200 font-medium"> React.js</span>,
                 <span className="text-gray-200 font-medium"> Node.js</span>,and
-                {/* <span className="text-gray-200 font-medium"> Flutter</span>, and */}
                 <span className="text-gray-200 font-medium"> AWS Cloud</span>, I
                 specialize in creating seamless experiences across web and
                 mobile platforms.

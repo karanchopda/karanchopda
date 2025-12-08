@@ -31,7 +31,7 @@ const Navbar = ({ activeSection, scrollToSection }) => {
   const handleNavClick = (item) => {
     if (item.isResume) {
       // ✅ Open resume directly from public folder
-      window.open(process.env.PUBLIC_URL + '/KaranChopdaResume (3).pdf', '_blank', 'noopener,noreferrer');
+      window.open(process.env.PUBLIC_URL + '/karan_resume.pdf', '_blank', 'noopener,noreferrer');
     } else {
       scrollToSection(item.id);
     }

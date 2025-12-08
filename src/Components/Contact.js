@@ -32,12 +32,10 @@ const ContactPage = () => {
         </div>
       </nav>
 
-      {/* Main Content */}
       <main className="pt-20 sm:pt-24 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-start min-h-[30vh]">
             
-            {/* Left Side - Contact Info */}
             <div className={`transform transition-all duration-1000 ${
               isVisible ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'
             }`}>
@@ -60,7 +58,7 @@ const ContactPage = () => {
                     { 
                       name: 'Resume', 
                       icon: FileText, 
-                      href: 'http://localhost:3000/KaranChopdaResume%20(3).pdf',
+                      href: process.env.PUBLIC_URL + '/karan_resume.pdf',
                       delay: '0.2s'
                     },
                     // { 
@@ -169,7 +167,6 @@ const ContactPage = () => {
             </div>
           </div>
 
-          {/* Footer */}
           <footer className="mt-8 sm:mt-12 lg:mt-16 pb-4 sm:pb-6">
             <div className="flex flex-col-reverse sm:flex-row justify-between items-end sm:items-center space-y-reverse space-y-4 sm:space-y-0">
               <div className={`transform transition-all duration-1000 delay-700 ${
@@ -192,7 +189,6 @@ const ContactPage = () => {
         </div>
       </main>
 
-      {/* Floating particles animation */}
       <div className="fixed inset-0 pointer-events-none">
         {[...Array(20)].map((_, i) => (
           <div
