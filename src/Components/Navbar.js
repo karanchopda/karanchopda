@@ -22,8 +22,9 @@ const Navbar = ({ activeSection, scrollToSection }) => {
     { name: 'HOME', id: 'home' },
     { name: 'ABOUT', id: 'about' },
     { name: 'SKILLS', id: 'skills' },
+    { name: 'EXPERIENCE', id: 'experience' },
     { name: 'PROJECTS', id: 'projects' },
-    { name: 'CONTACT', id: 'contact' }, // ✅ Contact section included
+    { name: 'CONTACT', id: 'contact' },
     { name: 'RESUME', id: 'resume', isResume: true }
   ];
 

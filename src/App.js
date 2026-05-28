@@ -3,7 +3,8 @@ import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import About from './Components/About';
 import Skills from './Components/Skills';
-import Projects from './Components/Projects'; // ✅ Import Projects component
+import Experience from './Components/Experience';
+import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import './App.css';
 
@@ -11,9 +12,9 @@ function App() {
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
-    // Handle scroll spy for active navigation - UPDATED to include projects
+    // Handle scroll spy for active navigation
     const handleScroll = () => {
-      const sections = ['home', 'about', 'skills', 'projects', 'contact']; // ✅ Added projects
+      const sections = ['home', 'about', 'skills', 'experience', 'projects', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -67,7 +68,12 @@ function App() {
           <Skills />
         </section>
 
-        {/* Projects Section - ✅ NEW SECTION */}
+        {/* Experience Section */}
+        <section id="experience" className="section">
+          <Experience />
+        </section>
+
+        {/* Projects Section */}
         <section id="projects" className="section">
           <Projects />
         </section>

@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import {
-//   ExternalLink,
   Github,
   Laptop,
   Globe,
   Database,
-  Gamepad2,
   Calendar,
   Code2,
   ChevronDown,
@@ -30,32 +28,49 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Seva Auto Sales Website",
-      subtitle: "Client Project",
+      title: "Ask-PDF Application",
+      subtitle: "AI-Powered Platform",
       description:
-        "Developed a fully responsive website for a business that customizes vehicles for individuals with physical disabilities. Implemented light/dark mode and accessibility features to ensure usability for all users.",
-      technologies: ["React.js", "Tailwind CSS", "Vite"],
+        "An intelligent document interaction platform allowing users to upload PDFs and query content using multiple AI models. Engineered PDF parsing and AI model integration for natural language querying of document content.",
+      technologies: ["ReactJS", "NodeJS", "Python", "AI Models", "MongoDB"],
       features: [
-        "Fully responsive design",
-        "Light/dark mode toggle",
-        "Accessibility features",
-        "SEO optimization",
-        "Vercel deployment",
+        "PDF parsing and AI integration",
+        "Multi-model support",
+        "Natural language querying",
+        "Real-time document analysis",
+        "Production deployment",
       ],
-      liveDemo: "https://sevaautosales.vercel.app",
-      github: "https://github.com/Sevaautosales/sevaautosales",
-      icon: Laptop,
-      gradient: "from-orange-500 to-yellow-500",
-      borderGlow: "hover:shadow-orange-500/25",
+      liveDemo: "https://ask-pdf.edeltacorp.com",
+      github: null,
+      icon: Database,
       delay: "100",
     },
     {
       id: 2,
+      title: "WhatsApp Broadcast",
+      subtitle: "Business Communication Tool",
+      description:
+        "A web application enabling businesses to send bulk WhatsApp messages, manage contacts, and track broadcast campaigns. Built bulk messaging system with contact management and real-time delivery updates.",
+      technologies: ["ReactJS", "NodeJS", "Express.js", "Supabase", "PostgreSQL", "WhatsApp API"],
+      features: [
+        "Bulk messaging system",
+        "Contact management",
+        "Campaign tracking",
+        "Real-time delivery updates",
+        "Audience segmentation",
+      ],
+      liveDemo: "https://wb.edeltacorp.com",
+      github: null,
+      icon: Globe,
+      delay: "200",
+    },
+    {
+      id: 3,
       title: "Personal Portfolio",
       subtitle: "Showcase Website",
       description:
-        "Designed and built a modern, interactive portfolio to showcase projects, skills, and work experience. Added smooth animations using Framer Motion for a professional user experience.",
-      technologies: ["React.js", "Tailwind CSS", "Framer Motion"],
+        "Designed and built a modern, interactive portfolio to showcase projects, skills, and work experience with smooth animations for a professional user experience.",
+      technologies: ["ReactJS", "Tailwind CSS", "NodeJS"],
       features: [
         "Interactive animations",
         "Contact form integration",
@@ -64,107 +79,123 @@ const Projects = () => {
         "Professional UX design",
       ],
       liveDemo: "https://karanchopda.vercel.app",
-      github: "https://github.com/karanchopda/karanchopda",
-      icon: Globe,
-      gradient: "from-yellow-500 to-orange-500",
-      borderGlow: "hover:shadow-yellow-500/25",
-      delay: "200",
-    },
-    {
-      id: 3,
-      title: "BlogApp",
-      subtitle: "Full-Stack Platform",
-      description:
-        "Created a full-stack blogging platform with user authentication, post creation, and commenting features. Used Redux Toolkit & RTK Query for state management and optimized API handling.",
-      technologies: [
-        "React.js",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "Redux Toolkit",
-      ],
-      features: [
-        "User authentication system",
-        "Role-based access control",
-        "Post creation & commenting",
-        "State management with Redux",
-        "API optimization",
-      ],
-      liveDemo: "https://blog-space-frontend-x.vercel.app/",
-      github: "https://github.com/karanchopda/BlogSpace-frontend",
-      icon: Database,
-      gradient: "from-orange-400 to-yellow-600",
-      borderGlow: "hover:shadow-orange-400/25",
+      github: "https://github.com/karanchopda/karanchopda_portfolio",
+      icon: Laptop,
       delay: "300",
     },
     {
       id: 4,
-      title: "Student Management System",
-      subtitle: "Web Application",
+      title: "Seva Auto Sales",
+      subtitle: "Client Project",
       description:
-        "Built a web application to manage student records including adding, updating, and deleting data. Implemented secure authentication using JWT with clean, responsive UI.",
-      technologies: [
-        "React.js",
-        "Node.js",
-        "Express.js",
-        "PostgreSQL",
-        "Material UI",
-      ],
+        "Developed a fully responsive website for a business that customizes vehicles for individuals with physical disabilities. Implemented accessibility features to ensure usability for all users.",
+      technologies: ["ReactJS", "NodeJS", "Tailwind CSS"],
       features: [
-        "Student records management",
-        "CRUD operations",
-        "JWT authentication",
-        "PostgreSQL database",
-        "Responsive Material UI",
+        "Fully responsive design",
+        "Accessibility features",
+        "SEO optimization",
+        "Custom vehicle showcase",
+        "Contact integration",
       ],
-      liveDemo: "https://student-management09.vercel.app/",
-      github: "https://github.com/karanchopda/student-management",
-      icon: Code2,
-      gradient: "from-yellow-600 to-orange-600",
-      borderGlow: "hover:shadow-yellow-600/25",
+      liveDemo: "https://sevaautosales.vercel.app",
+      github: "https://github.com/Sevaautosales/sevaautosales",
+      icon: Globe,
       delay: "400",
     },
     {
       id: 5,
-      title: "Guess The Number",
-      subtitle: "Mini Game",
+      title: "Seva Invoice Generator",
+      subtitle: "Business Tool",
       description:
-        "Developed a fun interactive game where users guess a random number generated by the system. Implemented dynamic score tracking and win/lose logic with responsive design.",
-      technologies: ["HTML5", "CSS3", "JavaScript"],
+        "Personal invoice generator web app designed for creating professional invoices quickly and efficiently with customizable templates and automated calculations.",
+      technologies: ["ReactJS", "NextJS", "Tailwind CSS"],
       features: [
-        "Interactive gameplay",
-        "Dynamic score tracking",
-        "Win/lose logic system",
-        "Responsive design",
-        "Quick deployment",
+        "Invoice generation",
+        "Customizable templates",
+        "Automated calculations",
+        "PDF export",
+        "Client management",
       ],
-      liveDemo: "https://guess-the-number-self-ten.vercel.app/",
-      github: "https://github.com/karanchopda/Guess-the-number",
-      icon: Gamepad2,
-      gradient: "from-amber-500 to-orange-500",
-      borderGlow: "hover:shadow-amber-500/25",
+      liveDemo: "https://seva-invoice-generator.vercel.app",
+      github: null,
+      icon: Code2,
       delay: "500",
     },
     {
       id: 6,
-      title: "Daily Routine Planner",
-      subtitle: "Productivity App",
+      title: "Nindra",
+      subtitle: "Health Tracker",
       description:
-        "Built a productivity planner to help users manage daily tasks efficiently. Added features like task prioritization, drag-and-drop, and dark mode with persistent data storage.",
-      technologies: ["React.js", "Tailwind CSS", "LocalStorage"],
+        "Sleep cycle tracker for logging hours, monitoring patterns & health insights. Helps users understand their sleep quality and improve their rest habits.",
+      technologies: ["ReactJS", "NodeJS", "Supabase", "PostgreSQL"],
       features: [
-        "Task prioritization system",
-        "Drag-and-drop functionality",
-        "Dark mode toggle",
-        "LocalStorage persistence",
-        "Minimal clean UI",
+        "Sleep cycle tracking",
+        "Pattern monitoring",
+        "Health insights",
+        "Data visualization",
+        "Progress reports",
       ],
-      liveDemo: "https://daily-routine-planner-tan.vercel.app/",
-      github: "https://github.com/karanchopda/Daily-routine-planner-",
+      liveDemo: "https://nindra.vercel.app",
+      github: null,
       icon: Calendar,
-      gradient: "from-yellow-500 to-amber-500",
-      borderGlow: "hover:shadow-yellow-500/25",
       delay: "600",
+    },
+    {
+      id: 7,
+      title: "Moniqo AI",
+      subtitle: "AI Financial Tool",
+      description:
+        "AI-powered tool to detect wasteful spending & suggest expense reductions from bank statements. Analyzes spending patterns and provides actionable insights.",
+      technologies: ["ReactJS", "NodeJS", "AI API", "Supabase", "PostgreSQL"],
+      features: [
+        "Spending pattern analysis",
+        "Wasteful expense detection",
+        "AI-powered suggestions",
+        "Bank statement parsing",
+        "Financial insights",
+      ],
+      liveDemo: "https://moniqoai.vercel.app",
+      github: null,
+      icon: Database,
+      delay: "700",
+    },
+    {
+      id: 8,
+      title: "Dr.Fix Family",
+      subtitle: "Loyalty & Rewards Mobile App",
+      description:
+        "A React Native-based loyalty and rewards mobile application developed for cement, chemical, and distributor networks. Enhances customer engagement through reward programs, user management, and seamless brand-customer interaction.",
+      technologies: ["React Native", "NodeJS", "MongoDB"],
+      features: [
+        "Loyalty & rewards program",
+        "Distributor network connectivity",
+        "User management system",
+        "Brand-customer engagement",
+        "Scalable architecture",
+      ],
+      liveDemo: "https://dr-fix-family.vercel.app/api/download-apk",
+      github: null,
+      icon: Laptop,
+      delay: "800",
+    },
+    {
+      id: 9,
+      title: "AI Model Tester Platform",
+      subtitle: "ML Testing Tool",
+      description:
+        "A platform for uploading, managing, and testing Python-trained AI models including STT, TTS, and LLM models. Built admin panel with real-time comparison testing and model switching functionality.",
+      technologies: ["ReactJS", "NodeJS", "Express.js", "Python", "MongoDB"],
+      features: [
+        "STT, TTS, LLM model support",
+        "Real-time comparison testing",
+        "Model switching functionality",
+        "Admin panel for management",
+        "Performance metrics",
+      ],
+      liveDemo: null,
+      github: null,
+      icon: Code2,
+      delay: "900",
     },
   ];
 
@@ -227,22 +258,18 @@ const Projects = () => {
                 } hover:scale-[1.02] hover:-translate-y-2`}
                 style={{ animationDelay: `${project.delay}ms` }}
               >
-                {/* Glowing border effect */}
-                <div
-                  className={`absolute -inset-0.5 bg-gradient-to-r ${project.gradient} rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-sm ${project.borderGlow}`}
-                ></div>
+                {/* Subtle hover glow effect */}
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-sm"></div>
 
                 {/* Main card */}
-                <div className="relative bg-gray-900/90 backdrop-blur-sm border border-gray-800 rounded-2xl p-6 h-full flex flex-col hover:border-gray-700 transition-all duration-500">
+                <div className="relative bg-gray-900/90 backdrop-blur-sm border border-gray-800 rounded-2xl p-6 h-full flex flex-col hover:border-yellow-500/30 transition-all duration-500">
                   {/* Project Header */}
                   <div className="flex items-start space-x-4 mb-4">
-                    <div
-                      className={`p-3 rounded-xl bg-gradient-to-r ${project.gradient} shadow-lg group-hover:scale-110 transition-transform duration-300`}
-                    >
+                    <div className="p-3 rounded-xl bg-gradient-to-r from-yellow-500 to-orange-500 shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <project.icon className="w-6 h-6 text-white" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-xl font-bold text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-300 group-hover:bg-clip-text transition-all duration-300">
+                      <h3 className="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors duration-300">
                         {project.title}
                       </h3>
                       <p className="text-sm text-gray-400 font-medium">
@@ -300,9 +327,7 @@ const Projects = () => {
                         .slice(0, 3)
                         .map((feature, featureIndex) => (
                           <li key={featureIndex} className="flex items-start">
-                            <span
-                              className={`w-1.5 h-1.5 bg-gradient-to-r ${project.gradient} rounded-full mt-2 mr-3 flex-shrink-0`}
-                            ></span>
+                            <span className="w-1.5 h-1.5 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                             <span className="leading-relaxed">{feature}</span>
                           </li>
                         ))}
@@ -316,21 +341,23 @@ const Projects = () => {
                         href={project.liveDemo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`flex items-center justify-center space-x-2 px-4 py-2.5 bg-gradient-to-r ${project.gradient} text-white text-sm rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg flex-1 group/btn`}
+                        className="flex items-center justify-center space-x-2 px-4 py-2.5 bg-gradient-to-r from-yellow-500 to-orange-500 text-white text-sm rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/50 flex-1 group/btn"
                       >
                         <Globe className="w-4 h-4 group-hover/btn:rotate-12 transition-transform duration-300" />
                         <span>Live Demo</span>
                       </a>
                     )}
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center space-x-2 px-4 py-2.5 bg-gray-800 hover:bg-gray-700 text-white text-sm rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg flex-1 border border-gray-700 hover:border-gray-600 group/btn"
-                    >
-                      <Github className="w-4 h-4 group-hover/btn:rotate-12 transition-transform duration-300" />
-                      <span>GitHub</span>
-                    </a>
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center space-x-2 px-4 py-2.5 bg-gray-800 hover:bg-gray-700 text-white text-sm rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg flex-1 border border-gray-700 hover:border-gray-600 group/btn"
+                      >
+                        <Github className="w-4 h-4 group-hover/btn:rotate-12 transition-transform duration-300" />
+                        <span>GitHub</span>
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

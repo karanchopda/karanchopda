@@ -2,43 +2,38 @@ import React from 'react';
 
 const SkillsSection = () => {
   const skillsData = {
-    Frontend: [
-      'HTML',
-      'CSS', 
-      'React Js',
-      'vue Js',
-      'Tailwind',
-      'MUI',
-      'Javascript',
-      'Typescript',
-    //   'Next Js 13'
+    'Programming Languages': [
+      'JavaScript',
+      'TypeScript',
+      'Python',
+      'Java'
     ],
-    Backend: [
-      'Node Js',
-      'Express Js', 
-      'RESTful APIs',
-      'Authentication (JWT, OAuth)'
-    //   'Python',
-    //   'GoLang',
-    //   'Fiber'
+    'Frontend Development': [
+      'ReactJS',
+      'NextJS',
+      'React Native',
+      'Redux',
+      'HTML5',
+      'CSS3',
+      'Bootstrap',
+      'Tailwind CSS'
     ],
-    Database: [
+    'Backend Development': [
+      'NodeJS',
+      'Express.js',
+      'Socket.io',
+      'Spring Boot'
+    ],
+    'Databases': [
+      'PostgreSQL (Supabase)',
       'MySQL',
-    //   'PostgreSQL',
-      'MongoDB',
-      'Mongoose'
+      'MongoDB'
     ],
-    // Devops: [
-    //   'AWS',
-    // //   'Terraform',
-    // //   'Terragrunt',
-    //   'Firebase'
-    // ],
-    Languages: [
-    //   'Python',
-    //   'GoLang',
-      'Javascript',
-      'Typescript'
+    'Other': [
+      'AWS',
+      'Git',
+      'GenAI',
+      'OOP'
     ]
   };
 

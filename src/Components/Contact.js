@@ -9,7 +9,7 @@ const ContactPage = () => {
   }, []);
 
   return (
-    <div className="h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
       <nav className=" flex-1 overflow-auto top-0 w-full bg-black/90 backdrop-blur-md border-b border-white/10 z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex justify-center">

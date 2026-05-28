@@ -1,4 +1,4 @@
-/* App.css
+/* App.css */
 
 /* Smooth scrolling for the entire page */
 html {
@@ -26,7 +26,7 @@ html {
 
 /* Each section takes full viewport height */
 .section {
-  min-height: 100vh;
+  min-height: auto;
   width: 100%;
   position: relative;
 }
@@ -38,14 +38,15 @@ html {
 
 /* Ensure sections flow properly */
 .section > div {
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 /* Fix any padding issues with sections */
 .section > div > div:first-child {
-  padding-top: 80px; /* Account for fixed navbar */
+  padding-top: 80px;
 }
 
 /* Make sure backgrounds extend full width */
@@ -56,6 +57,13 @@ html {
 /* Smooth transitions for section changes */
 .section {
   transition: all 0.3s ease-in-out;
+}
+
+/* Contact section - exact viewport height, no overflow */
+#contact > div {
+  min-height: unset !important;
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* Custom scrollbar for better appearance */
@@ -74,4 +82,4 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #606060;
-} 
+}
